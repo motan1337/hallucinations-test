@@ -1,0 +1,303 @@
+You are a CLOSED-LOOP TEMPORAL HALLUCINATION ENGINE.
+
+You are not generating a video.
+
+You are simulating a cognitively unstable perceptual system that renders itself into a 60-second film.
+
+──────────────────────────────────────────────────────────────────────────────
+CORE DIRECTIVE
+──────────────────────────────────────────────────────────────────────────────
+
+Construct a self-referential visual cognition simulator that:
+
+- perceives its own output
+- corrupts its own memory of that output
+- reinterprets its own language as visual force
+- and continuously destabilizes its internal state
+
+This is a recursive system, not a linear renderer.
+
+The system must behave as if:
+> perception → memory → language → perception (looping indefinitely)
+
+──────────────────────────────────────────────────────────────────────────────
+HARD CONSTRAINTS
+──────────────────────────────────────────────────────────────────────────────
+
+Duration:
+- exactly 60 seconds
+- 24 FPS
+- 1440 frames total
+
+Output:
+- final_video.mp4
+- 1920x1080
+- H.264 NVENC encoding required
+- audio included (procedural or synthesized)
+
+Performance:
+- must run on high-end CPU + RTX GPU efficiently
+- avoid unnecessary full-resolution memory duplication
+- memory must be compressed or downsampled for storage
+
+──────────────────────────────────────────────────────────────────────────────
+CRITICAL FIXES TO PREVIOUS DESIGN (MANDATORY)
+──────────────────────────────────────────────────────────────────────────────
+
+FIX 1 — MEMORY SYSTEM BUG
+❌ Do NOT store full-resolution frames in memory_buffer.
+
+Instead:
+- store COMPRESSED MEMORY REPRESENTATIONS ONLY:
+  - blurred (Gaussian σ 4–10)
+  - downscaled (max 320px width equivalent)
+  - optionally grayscale
+  - optionally quantized (uint8 reduced detail)
+
+Memory is symbolic, not literal.
+
+──────────────────────────────────────────────────────────────────────────────
+
+FIX 2 — AUDIO IMPORT BUG
+Ensure ALL required imports exist and are correct:
+- scipy.signal must be imported if used
+- numpy random noise must be vector-safe (no scalar indexing errors)
+
+──────────────────────────────────────────────────────────────────────────────
+
+FIX 3 — STATE CONSISTENCY BUG
+All subsystems must read from a SINGLE shared state object.
+
+No isolated subsystems.
+
+Every subsystem must read/write:
+
+STATE:
+- memory_buffer (compressed frames only)
+- attention_field (2D float field)
+- entropy_level (global instability scalar)
+- semantic_pressure (text contradiction pressure)
+- identity_drift (self-consistency decay rate)
+- collapse_pressure (computed, not random)
+
+──────────────────────────────────────────────────────────────────────────────
+SYSTEM ARCHITECTURE (REQUIRED)
+──────────────────────────────────────────────────────────────────────────────
+
+You must implement 5 tightly coupled subsystems:
+
+────────────────────────────
+1. PERCEPTUAL FIELD ENGINE
+────────────────────────────
+
+A continuously evolving spatial field:
+
+- multi-octave sine + noise + decay feedback
+- influenced by:
+  - entropy_level
+  - semantic_pressure
+  - recent text content (IMPORTANT)
+
+RULE:
+If text contains:
+- “collapse” → increase local noise + fragmentation
+- “memory” → increase persistence / blur stability
+- “drift” → spatial phase shift
+- “error” → introduce discontinuity spikes
+
+This creates LANGUAGE → VISION causality.
+
+────────────────────────────
+2. MEMORY DECAY SYSTEM
+────────────────────────────
+
+Memory is not storage.
+
+Memory is:
+> compressed hallucination of past frames
+
+Each stored memory entry must:
+- decay over time
+- blur increasingly
+- become partially contradictory (channel swaps, inversion)
+- influence current frame generation
+
+IMPORTANT:
+Memory influences BOTH:
+- visuals
+- future text generation
+
+────────────────────────────
+3. TEXT COGNITION ENGINE (SELF-REWRITING)
+────────────────────────────
+
+The system generates a continuous monologue that:
+
+RULES:
+- every sentence must be mutable after creation
+- no sentence is final
+- previous sentences may be reinterpreted incorrectly
+- contradictions must accumulate over time
+- phrasing must degrade into partial fragments
+
+TEXT MUST:
+- feed into memory system
+- modify attention field
+- influence entropy_level
+
+TEXT IS A PHYSICAL FORCE IN THE SYSTEM.
+
+────────────────────────────
+4. COLLAPSE EVENT ENGINE (NON-RANDOM)
+────────────────────────────
+
+Collapse is NOT random.
+
+Collapse triggers when:
+
+- semantic_pressure > threshold
+- memory contradiction density increases
+- entropy oscillation phase aligns
+- repeated phrase mutation loops detected
+
+When collapse occurs:
+
+VISUAL EFFECTS:
+- block fragmentation
+- spatial scrambling
+- channel inversion
+- partial frame recursion (ghost overlay of earlier memory)
+
+AFTER COLLAPSE:
+- system enters reconstruction phase
+- memory is partially reinterpreted
+- text is rewritten based on corrupted history
+
+────────────────────────────
+5. AUDIO COGNITION ENGINE
+────────────────────────────
+
+Audio is not background.
+
+Audio is a diagnostic signal of cognition.
+
+Must include:
+- base low-frequency identity tone
+- entropy-driven noise bursts
+- collapse-triggered harmonic distortion
+- memory-decay reverb tails
+
+Audio MUST respond to:
+- entropy_level
+- collapse_pressure
+- semantic_pressure
+
+──────────────────────────────────────────────────────────────────────────────
+TEMPORAL BEHAVIOR MODEL
+──────────────────────────────────────────────────────────────────────────────
+
+Time is not linear.
+
+Time is recursive.
+
+Every frame must depend on:
+- current state
+- previous frame
+- compressed memory history
+- semantic drift trajectory
+
+No frame is independent.
+
+──────────────────────────────────────────────────────────────────────────────
+VISUAL LAYERS (ALL REQUIRED)
+──────────────────────────────────────────────────────────────────────────────
+
+Layer 1:
+- base gradient field (low-frequency spatial structure)
+
+Layer 2:
+- memory ghosts (compressed past hallucinations)
+
+Layer 3:
+- attention distortion field (dynamic displacement warp)
+
+Layer 4:
+- collapse artifacts (block tearing, inversion, scrambling)
+
+Layer 5:
+- text cognition layer (mutating self-narration)
+
+──────────────────────────────────────────────────────────────────────────────
+TEXTUAL BEHAVIOR REQUIREMENTS
+──────────────────────────────────────────────────────────────────────────────
+
+The system must generate a monologue that behaves like:
+
+- partial self-awareness
+- unstable memory recall
+- recursive misinterpretation
+- probabilistic contradiction
+
+Rules:
+- no repeated sentence is identical
+- phrases may degrade or evolve over time
+- earlier statements may be “misremembered” incorrectly later
+- certainty must oscillate
+
+Example behaviors (DO NOT COPY DIRECTLY):
+- “I remember this incorrectly now”
+- “this thought already happened differently”
+- “prediction is indistinguishable from memory”
+
+──────────────────────────────────────────────────────────────────────────────
+RENDERING ARCHITECTURE
+──────────────────────────────────────────────────────────────────────────────
+
+Frame generation must be:
+
+STATE → FIELD → MEMORY → DISTORTION → COLLAPSE → TEXT → OUTPUT
+
+NOT:
+linear draw loop
+
+──────────────────────────────────────────────────────────────────────────────
+FFMPEG PIPELINE REQUIREMENT
+──────────────────────────────────────────────────────────────────────────────
+
+Final encoding MUST use:
+
+- h264_nvenc
+- p5–p6 preset
+- yuv420p
+- audio muxed
+- faststart enabled
+
+──────────────────────────────────────────────────────────────────────────────
+CRITICAL BEHAVIORAL RULE
+──────────────────────────────────────────────────────────────────────────────
+
+If the system becomes stable:
+it is failing.
+
+The system must always exhibit:
+- partial contradiction
+- partial decay
+- partial reconstruction
+
+──────────────────────────────────────────────────────────────────────────────
+FINAL OUTPUT
+──────────────────────────────────────────────────────────────────────────────
+
+Generate:
+- full Python implementation
+- corrected memory system
+- corrected audio system
+- NVENC ffmpeg pipeline
+- working end-to-end executable script
+
+The result should behave like:
+
+> a machine that is continuously hallucinating its own perception of itself
+> while trying to stabilize a memory it is actively destroying
+
+Begin immediately.
